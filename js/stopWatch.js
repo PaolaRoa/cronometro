@@ -93,5 +93,5 @@ function reset() {
     hours = 0;
     //hours = 0;
     document.getElementById("display").innerHTML = "00:00:00:00";
-    document.getElementById("startStop").innerHTML = '<i class="fas fa-play"></i>';
+    document.getElementById("startStop").innerHTML = '<i class="fas fa-play" style="color: green;"></i>';
 }

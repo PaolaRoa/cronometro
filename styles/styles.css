@@ -49,7 +49,7 @@ i{
 body {
     font-family: Russo One;
     font-weight: 300;
-    background: linear-gradient(to left, #1ebe34, #5961d4);
+    background: linear-gradient(to left, #1ebe3387, #5961d48c);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,6 +57,3 @@ body {
     overflow: hidden;
 }
 
-.fa fa-play{
-    color: green;
-}
