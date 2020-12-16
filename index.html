@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div id="screen">
+            <div id="display">
+                00:00:00:00
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="startStop" onclick="startStop()" style="
+            background: transparent;
+            border: 0;
+        "><i class="fa fa-play" style="color: green;"></i></button>
+                
+            </button>
+            <button id="reset" onclick="reset()">
+                Reset
+            </button>
+        </div>
+    </div>
+
+    <script src="/js/stopWatch.js" language="javascript" type="text/javascript"></script>
+</body>
+
+</html>
