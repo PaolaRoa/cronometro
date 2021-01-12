@@ -2,7 +2,7 @@
 
 let milliseconds = 0;
 let seconds = 0;
-let minutes = 0;
+let minutes = 59;
 let hours = 0;
 
 //Definir las variables para mantener valores (00)
@@ -31,6 +31,12 @@ function stopWatch() {
             seconds = 0;
             minutes++;
         }
+
+        if (minutes / 60 === 1){
+            minutes = 0;
+            hours++;
+        }
+
     }
 
     //Si segundos/minutos/horas son solamente un digito, agregue un cero inicial a las unidades
