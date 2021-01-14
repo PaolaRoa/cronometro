@@ -10,7 +10,7 @@ i{
 }
 #display {
     width: 100%;
-    font-size: 48px;
+    font-size: 4vw;
     text-align: center;
     margin: 0px auto;
     font-family: 'Press Start 2P', cursive;
@@ -22,7 +22,7 @@ i{
     background: rgb(105,105,105);
     background: linear-gradient(337deg, rgba(105,105,105,1) 5%, rgba(203,203,203,1) 13%, rgba(153,153,153,1) 18%, rgba(164,164,164,1) 22%, rgba(164,164,164,1) 39%, rgba(180,179,179,1) 42%, rgba(111,111,111,1) 48%, rgba(125,125,125,1) 54%, rgba(105,105,105,1) 68%, rgba(125,125,125,1) 79%);
    padding: 20px;
-   width: 50%;
+   width: 60vw;
    border: 10px solid rgb(38, 38, 38);
    margin: auto;
    border-radius:30px;
