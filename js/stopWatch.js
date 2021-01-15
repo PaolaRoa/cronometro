@@ -1,13 +1,13 @@
-//Definir las variables para mantener valores de tiempo
+//Definir las variables con valores de tiempo
 
-let milliseconds = 0;
+let centesimas = 0;
 let seconds = 0;
-let minutes = 59;
+let minutes = 0;
 let hours = 0;
 
 //Definir las variables para mantener valores (00)
 
-let displayMilliSeconds = 0;
+let displaycentesimas = 0;
 let displaySeconds = 0;
 let displayMinutes = 0;
 let displayHours = 0;
@@ -21,29 +21,29 @@ let status = "stopped";
 //Funcion que contiene la logica que determina cuando incrementar el valor)
 
 function stopWatch() {
-    milliseconds++; //Incremento de segundo
+    centesimas++; //Incremento de centesima
 
-    if (milliseconds / 100 === 1) {
-        milliseconds = 0;
+    if (centesimas / 100 === 1) {
+        centesimas = 0;
         seconds++;
 
-        if (seconds / 60 === 1) {
+    if (seconds / 60 === 1) {
             seconds = 0;
             minutes++;
         }
 
-        if (minutes / 60 === 1){
+    if (minutes / 60 === 1){
             minutes = 0;
             hours++;
         }
 
     }
 
-    //Si segundos/minutos/horas son solamente un digito, agregue un cero inicial a las unidades
-    if (milliseconds < 10) {
-        displayMilliSeconds = "0" + milliseconds.toString(); //Metodo que convierte en string
+    //Si segundos/minutos/horas son solamente un digito, agregue un cero inicial a las unidades. asi se mantiene el display siempre con dos digitos
+    if (centesimas < 10) {
+        displaycentesimas = "0" + centesimas.toString(); //Metodo que convierte en string
     } else {
-        displayMilliSeconds = milliseconds;
+        displaycentesimas = centesimas;
     }
 
     if (seconds < 10) {
@@ -67,7 +67,7 @@ function stopWatch() {
 
     //Mostrar tiempo actualizado al usuario
 
-    document.getElementById("display").innerHTML = displayHours + ':' + displayMinutes + ':' + displaySeconds + ':' + displayMilliSeconds;
+    document.getElementById("display").innerHTML = displayHours + ':' + displayMinutes + ':' + displaySeconds + ':' + displaycentesimas;
     //Mostrar en la pagina principal
 }
 
@@ -78,8 +78,8 @@ function startStop() {
 
         
         //Comenzar el cronometro (llamando la funcion setInterval())
-        interval = window.setInterval(stopWatch, 10); //Temporizador (cada milisegundos que deseemos 
-        //vamos a llamar a la funcion stopWatch que luego actualizará la hora)
+        interval = window.setInterval(stopWatch, 10); //Temporizador (se llama la funcion cada 10 ms que equivale a una centesima,
+        //que es la unidad mas pequeña que manejamos en el cronometro)
         document.getElementById("startStop").innerHTML = '<i class="fa fa-stop" style="color: red;"></i>';
         status = "started";
     } else {
@@ -93,7 +93,7 @@ function startStop() {
 //Funcion para boton iniciar
 function reset() {
     window.clearInterval(interval);
-    milliseconds = 0;
+    centesimas = 0;
     seconds = 0;
     minutes = 0;
     hours = 0;
@@ -101,3 +101,4 @@ function reset() {
     document.getElementById("display").innerHTML = "00:00:00:00";
     document.getElementById("startStop").innerHTML = '<i class="fas fa-play" style="color: green;"></i>';
 }
+

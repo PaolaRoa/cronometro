@@ -7,6 +7,8 @@
 i{
     font-size: 48px;
     background-color: transparent !important;
+    border: 0px none;
+    text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.534);;
 }
 #display {
     width: 100%;
@@ -23,9 +25,10 @@ i{
     background: linear-gradient(337deg, rgba(105,105,105,1) 5%, rgba(203,203,203,1) 13%, rgba(153,153,153,1) 18%, rgba(164,164,164,1) 22%, rgba(164,164,164,1) 39%, rgba(180,179,179,1) 42%, rgba(111,111,111,1) 48%, rgba(125,125,125,1) 54%, rgba(105,105,105,1) 68%, rgba(125,125,125,1) 79%);
    padding: 20px;
    width: 60vw;
-   border: 10px solid rgb(38, 38, 38);
+   border: 2vh solid rgb(38, 38, 38);
    margin: auto;
    border-radius:30px;
+   box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.534);
 
 }
 
@@ -33,9 +36,11 @@ i{
     text-align: center;
     padding: 1%;
     background-color: transparent;
+    margin-top: 20px;
+
 }
 
-.buttons:hover{
+button:hover{
     transform: scale(1.1);
 }
 
@@ -49,7 +54,10 @@ i{
 body {
     font-family: Russo One;
     font-weight: 300;
-    background: linear-gradient(to left, #1ebe3387, #5961d48c);
+    /* background: linear-gradient(to left, #1ebe3387, #5961d48c); */
+    background-color: black;
+    background-image: url(/assets/night-);
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,3 +65,19 @@ body {
     overflow: hidden;
 }
 
+#reset {
+    border-radius: 5px;
+    background-color: rgb(57, 40, 131);
+    color: white;
+    padding: 10px;
+    vertical-align: text-bottom;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.534);
+}
+
+
+button{
+    margin: 0px 10px;
+    outline: none;
+    border: 0px none;
+    
+}
