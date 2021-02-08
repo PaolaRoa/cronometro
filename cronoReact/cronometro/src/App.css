@@ -4,12 +4,12 @@
     width: 100%;
 
 }
-i{
+/* i{
     font-size: 48px;
     background-color: transparent !important;
     border: 0px none;
     text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.534);;
-}
+} */
 #display {
     width: 100%;
     font-size: 4vw;
@@ -56,23 +56,15 @@ body {
     font-weight: 300;
     /* background: linear-gradient(to left, #1ebe3387, #5961d48c); */
     background-color: black;
-    background-image: url(https://cdn.pixabay.com/photo/2016/11/21/17/41/night-1846734_960_720.jpg);
+    background-image: url(https://images.pexels.com/photos/1629236/pexels-photo-1629236.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
     background-position: center;
+    background-attachment: fixed;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    overflow: hidden;
-}
-
-#reset {
-    border-radius: 5px;
-    background-color: rgb(57, 40, 131);
-    color: white;
-    padding: 10px;
-    vertical-align: text-bottom;
-    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.534);
+    /* overflow: hidden; */
 }
 
 
@@ -81,4 +73,59 @@ button{
     outline: none;
     border: 0px none;
     
+}
+
+.start , .stop{
+    
+    padding: 10px;
+    margin: 20px;
+    background-color:transparent;
+}
+
+/* .start{
+   
+}
+
+.stop{
+    background-color: red;
+} */
+
+li{
+    list-style: none;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2vw;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    transition-duration: 2s;
+}
+
+h2{
+    font-family: Russo One;
+    
+}
+
+.clockIcon{
+    width: 3vw;
+    margin-right: 2vw;
+    
+}
+
+.buttonIcon{
+    width: 5vw;
+}
+
+.auxButton{
+    background-color: purple;
+    padding: 10px;
+    font-size: 2vw;
+    color: white;
+    font-family: Russo One;
+    vertical-align: 60%;
+    border-radius: 5px;
+}
+
+.buttonsContainer{
+    text-align: center;
 }
